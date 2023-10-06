@@ -1,0 +1,9 @@
+depend() {
+	after wireguard
+}
+
+command="/usr/bin/socat"
+command_args="-D <<< PROTOCOL >>>-LISTEN:51420,fork,reuseaddr <<< PROTOCOL >>>:<<< SOURCE HOST >>>:<<< SOURCE PORT >>>"
+command_user="root"
+pidfile="/run/$RC_SVCNAME.pid"
+command_background="yes"

@@ -1,0 +1,13 @@
+[Unit]
+Description=SOCAT Forwarder <<< FORWARD NAME >>>
+After=network.target
+StartLimitIntervalSec=0
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=root
+ExecStart=socat -D <<< PROTOCOL >>>-LISTEN:<<< FORWARD PORT >>>,fork,reuseaddr <<< PROTOCOL >>>:10.0.0.2:<<< SOURCE PORT >>>
+
+[Install]
+WantedBy=multi-user.target
