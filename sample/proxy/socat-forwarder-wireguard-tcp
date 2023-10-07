@@ -1,0 +1,9 @@
+depend() {
+	after wireguard
+}
+
+command="/usr/bin/socat"
+command_args="-D TCP-LISTEN:51820,fork,reuseaddr TCP:<<< SOURCE HOST >>>:51820"
+command_user="root"
+pidfile="/run/$RC_SVCNAME.pid"
+command_background="yes"

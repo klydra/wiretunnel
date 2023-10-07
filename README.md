@@ -19,3 +19,8 @@ Intended use case : Forwarding ports simply from a network behind a CGNAT to a p
 ## Install
 
 - Check out the [Install Guide](INSTALL.md) for a step-by-step guide on how to set this up
+
+## Troubleshooting
+
+- If you're facing issues while installing, you might want to look at the [Troubleshooting Section](TROUBLESHOOTING.md)
+- Should you still run into issues, feel free to [open a new Issue](https://github.com/klydra/wiretunnel/issues/new)
