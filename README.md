@@ -23,6 +23,11 @@ Intended use case : Forwarding ports simply from a network behind a CGNAT to a p
 - Check out the [Install Guide](INSTALL.md) for a step-by-step guide on how to set this up
 <br/>
 
+## Sample
+
+- If you by any chance want to use this make a WireGuard endpoint on your local network accessible to the outside, you might want to checkout the [Sample Setup](sample/SAMPLE.md)
+<br/>
+
 ## Troubleshooting
 
 - If you're facing issues while installing, you might want to look at the [Troubleshooting Section](TROUBLESHOOTING.md)
