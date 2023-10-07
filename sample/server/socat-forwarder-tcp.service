@@ -1,0 +1,13 @@
+[Unit]
+Description=SOCAT Forwarder WireGuard TCP
+After=network.target
+StartLimitIntervalSec=0
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=root
+ExecStart=socat -D TCP-LISTEN:51820,fork,reuseaddr TCP:10.0.0.2:51820
+
+[Install]
+WantedBy=multi-user.target
