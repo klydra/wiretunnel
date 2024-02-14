@@ -31,9 +31,9 @@
 
 ## Enable persistence [PROXY]
 
-1. Create an init.d service that ensures the WireGuard tunnel gets started at system startup with the command: `nano /etc/wireguard/wg0.conf` and paste the contents from [wireguard-quick](proxy/wireguard-quick).
-2. Enable the service using `rc-update add wireguard-quick`.
-3. Start the service using `rc-service wireguard-quick start`.
+1. Create an init.d service that ensures the WireGuard tunnel gets started at system startup with the command: `nano /etc/init.d/wireguard` and paste the contents from [wireguard-quick](proxy/wireguard-quick).
+2. Enable the service using `rc-update add wireguard`.
+3. Start the service using `rc-service wireguard start`.
 <br/>
 
 ## Enable persistence [SERVER]
